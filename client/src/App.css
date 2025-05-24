@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family:myfont;
+  src:url('./assets/fonts/Canela Family/Canela-Regular-Trial.otf')
+}
+
+
+@theme {
+    /* Colors */
+   --color-primary:#890C25;
+   --color-secondary:#181818; 
+   --color-heading:#181818;
+   --color-paragraph:#737477;
+   --color-background:#FFFFFF;
+   --color-foreground:#F6F6F6;
+   --color-middleground: #890C25;
+   --color-boxground: #890C25;
+
+   /* Font family */
+   --font-heading:myfont;
+
+   /* Box shaddow */
+   --shadow-minimal:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+   /* Breakpoints */
+   --breakpoint-xxs: 375px;
+   --breakpoint-xs: 410px;
+   --breakpoint-sm: 640px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 1024px;
+   --breakpoint-xl: 1280px;
+   --breakpoint-xxl: 1536px;
+   /* Size */
+
+   /* Line height */
+
+   /* Letter space */
+}
+
+@layer components {
+    .main{
+        @apply w-11/12 lg:w-10/12 xl:w-[81.7%] mx-auto transition-all duration-300
+    }
+    .heading{
+        @apply !font-heading leading-[1.2] text-heading uppercase text-4xl  xs:text-5xl font-medium
+    }
+    .paragraph{
+        @apply text-paragraph capitalize !leading-[1.85]
+    }
+    .sub-heading{
+        @apply !font-heading text-heading capitalize text-3xl xl:text-4xl font-medium tracking-wide
+    }
+}

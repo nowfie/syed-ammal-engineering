@@ -1,1 +1,25 @@
-@import "tailwindcss";
+@@import './assets/fonts/fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+
+*{
+    font-family: "Inter", serif;
+}
+section{
+    overflow: hidden;
+}
+
+.stroked-text {
+    color: transparent; /* Text color */
+    -webkit-text-stroke: 1.2px #737477; /* Stroke width and color */
+    -webkit-text-fill-color: transparent; /* Fills the text color */
+  }
+  
+.c-table,.c-td, .c-th{
+    border:solid #000 1px;
+}
+
+@import './App.css'
